@@ -13,12 +13,13 @@ body {
     display: flex;
     align-content: center;
     justify-content: space-between;
-    height: 65px;
+    height: 85px;
     background-color: #131415;
     width: 100%;
-    padding: 12px 30px 0px;
+    padding: 12px 60px 0px;
     position: fixed;
     z-index: 1;
+    
 }
 
 .navbar ul {
@@ -51,6 +52,27 @@ body {
     padding-top: 3px;
 }
 
+.carrito {
+    position: relative;
+}
+
+.noti{
+    position: absolute;
+    right:-10px;
+    top:-6px;
+    width: 15px;
+    height: 15px;
+    border-style: solid;
+    border-width: 0.1px;
+    align-items: center;
+    justify-content: center;
+    font-size:10px;
+    border-radius: 80%;
+    background-color: #ff0000;
+    padding:1px 4px;
+    text-align:justify
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -61,9 +83,10 @@ main {
 
 .titulo {
     display: flex;
-    padding: 70px 0px;
+    padding: 90px 30px;
     width: 85%;
     justify-content: space-between;
+    animation: fade 0.8s ease-in forwards;
 }
 
 .titulo-1 {
@@ -104,6 +127,13 @@ main {
     font-weight: 700;
     color: #FFFFFF;
     text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.titulo-1 a:hover {
+    text-decoration: none;
+    background: linear-gradient(to right, #ff0000, #fbbc10);
+    box-shadow: 1px 1px  #ffbd4b ;
 }
 
 .img-1 {
@@ -126,16 +156,20 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 30px;
+    gap: 24px;
 
 }
 
+#recomendaciones h3 {
+    font-size: 22px;
+}
 
 #recomendaciones :first-child {
-    font-size: 18px;
     font-weight: 400;
     color: #FFFFFF;
 }
+
+
 
 #recomendaciones-1 {
     display: flex;
@@ -153,8 +187,17 @@ main {
     width: 345px;
     height: 100px;
     background-color: #252525;
-    border-radius: 10px;
+    border-radius: 15px;
+    left: 197px;
+    top: 583px;
+    
 }
+
+.recomendaciones-conteiner:hover {
+    animation: scale 2s alternate infinite ease-in;
+    cursor: pointer;     
+}
+
 
 .recomendaciones-conteiner-p1 {
     color: #FFFFFF;
@@ -193,8 +236,9 @@ main {
     color: #FFFFFF;
     background: linear-gradient(to right, #ffa100, #ff005c);
     padding: 8px 15px;
-    border-radius: 20px;
+    border-radius: 17.5px;
     text-align: center;
+    letter-spacing: 0.5px;
 }
 
 #section-categorias {
@@ -207,15 +251,16 @@ main {
 
 .categorias {
     display: flex;
-    justify-content: center;
+    justify-content: LEFT;
     align-items: center;
-    gap: 25px;
+    gap: 20px;
     flex-wrap: wrap;
+    animation: fade 2.2s ease-in forwards, slide-up 0.9s ease-in-out;
 }
 
 #section-categorias h3 {
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 800;
     color: #FFFFFF;
 }
 
@@ -231,13 +276,18 @@ main {
 
 }
 
+.categorias-contenedor img{
+    filter: drop-shadow(1px 1px 1px #ffbe5c);
+}
+
 .categorias :first-child {
     padding-top: 10px;
     gap: 15px;
 }
 
 .categorias-contenedor p {
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 400;
     color: #FFFFFF;
     opacity: 70%;
 }
@@ -253,9 +303,18 @@ main {
     display: flex;
     flex-direction: column;
     align-content: center;
-    gap: 20px;
-    max-width: 90%;
-    padding-top: 30px;
+    gap: 30px;
+    max-width: 100%;
+/*     padding-top: 30px; */
+    padding: 30px 55px;
+}
+
+
+.populares-h3 h3{
+    font-size: 22px;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 100;
 }
 
 .populares-1 {
@@ -271,12 +330,12 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 275px;
+    width: 282px;
     height: 210px;
     background-color: #252525;
     border-radius: 15px;
-    gap: 20px;
-    padding: 15px 20px;
+    gap: 30px;
+    padding: 18px 23px;
 
 }
 
@@ -284,7 +343,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 15px;
+    gap: 5px;
     width: 240px;
 }
 
@@ -329,11 +388,11 @@ main {
 
 .populares-conteiner-3 a{
     text-decoration: none;
-    max-width: 100PX;
-    padding: 5px 12px;
+    max-width: 120PX;
+    padding: 8px 20px;
     background: linear-gradient(to right, #FFA100 ,#ff005c);
     color: #FFFFFF;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 500;
     text-align: center;
     border-radius: 20px;
@@ -358,24 +417,43 @@ footer{
 .footer-list a, li{ 
     text-decoration: none;
     color: #FFFFFF;
-    opacity: 90%;
     list-style: none;
     font-size: 17px;
-    font-weight: 400;
+    font-weight: 200;
 }
 
 footer p{
     color: #FFFFFF;
-    opacity: 80%;
-    font-weight: 300;
+    font-weight: 100;
 }
 footer span{
     color: #FFFFFF;
     font-weight: 700;
+    opacity: 100%;
 }
 
-.populares-h3{
-    font-size: 15px;
-    font-weight: 600;
-    color: #FFFFFF;
+
+
+/*--Transiciones-----*/
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
+
+@keyframes slide-up {
+    0% {
+        transform : translateY ( 100px ) ;
+   }
+   100%{
+        transform : translateY ( 0 ) ;
+    }
+}
+
+@keyframes scale {
+    0%   {transform: scale(0.7);}
+    100% {transform: scale(1);}
+  }
