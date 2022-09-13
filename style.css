@@ -79,6 +79,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 40px;
+    animation: fade 0.8s ease-in forwards;
 }
 
 .titulo {
@@ -190,11 +191,12 @@ main {
     border-radius: 15px;
     left: 197px;
     top: 583px;
+    /*animation: fade 0.8s ease-in forwards;*/
     
 }
 
 .recomendaciones-conteiner:hover {
-    animation: scale 2s alternate infinite ease-in;
+    animation: scale 1s alternate infinite ease-in;
     cursor: pointer;     
 }
 
@@ -255,7 +257,11 @@ main {
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
-    animation: fade 2.2s ease-in forwards, slide-up 0.9s ease-in-out;
+}
+
+.categorias-contenedor:hover{
+    animation: slide-up 1s forwards;
+    cursor: pointer;
 }
 
 #section-categorias h3 {
@@ -336,7 +342,11 @@ main {
     border-radius: 15px;
     gap: 20px;
     padding: 20px 25px;
+}
 
+.populares-conteiner:hover{
+    animation: scale2 2s forwards;
+    cursor: pointer;
 }
 
 .populares-conteiner-1 {
@@ -452,14 +462,21 @@ footer span{
 
 @keyframes slide-up {
     0% {
-        transform : translateY ( 100px ) ;
+        transform : translateY(0px);
    }
    100%{
-        transform : translateY ( 0 ) ;
+        transform : translateY(-20px);
     }
 }
 
 @keyframes scale {
-    0%   {transform: scale(0.7);}
+    0%   {transform: scale(0.8);}
     100% {transform: scale(1);}
   }
+
+@keyframes scale2 {
+    from
+        {transform: scale(1);}
+    to
+        {transform: scale(1.2);}    
+}
