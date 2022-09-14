@@ -34,6 +34,7 @@ body {
     list-style: none;
 }
 
+
 .home {
     color: #FFFFFF;
     display: flex;
@@ -54,6 +55,10 @@ body {
 
 .carrito {
     position: relative;
+}
+
+.burger {
+    display: none;
 }
 
 .noti{
@@ -84,8 +89,9 @@ main {
 
 .titulo {
     display: flex;
+    flex-direction: column;
     padding: 90px 30px;
-    width: 85%;
+    width: 80%;
     justify-content: space-between;
     animation: fade 0.8s ease-in forwards;
 }
@@ -157,6 +163,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 24px;
 
 }

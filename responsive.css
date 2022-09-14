@@ -1,0 +1,102 @@
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .header {
+        max-width: 100%;
+        gap: 60px;
+        justify-content: left;
+    }
+
+
+    #pizza{
+        height:300px;
+    }
+
+    .img-1 {
+        position: relative;
+        width: 245px;
+        height: 245px;
+        left: 0px;
+        top: 50px;
+    }
+    
+    .img-2 {
+        position: relative;
+        width: 362px;
+        height: 362px;
+        left: 120px;
+        top: -300px;
+    }
+
+
+    #recomendaciones h3{
+        padding-left: 30px;
+    }
+
+
+    #section-categorias {
+        max-width: 60%;
+    }
+
+}
+
+@media screen and (min-width: 250px) and (max-width: 480px) {
+    .header {
+        max-width: 480px;
+/*         gap: 20px; */
+        justify-content: space-between;
+    }
+
+    .logo{
+        margin-top: 20px;
+        width: 50px;
+        height: 50px;
+
+    }
+
+    .perfil , .home, .carrito , .noti{
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+        width: 50px;
+        height: 50px;
+    }
+
+    #pizza{
+        height:200px;
+        justify-content: flex-start;
+    }
+
+    .img-1 {
+        position: relative;
+        width: 205px;
+        height: 205px;
+        left:-50px;
+        top: 50px;
+    }
+    
+    .img-2 {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        left: 60px;
+        top: -255px;
+    }
+
+    #recomendaciones {
+        display: flex;
+        justify-content: center;
+        margin-left: 30px;
+    }
+
+    #recomendaciones-1{
+        display: flex;
+        justify-content: center; 
+    }
+
+
+
+
+
+
+}
